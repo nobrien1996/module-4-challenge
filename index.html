@@ -12,10 +12,42 @@
 
 <body>
 
-<!-- HEAD OF PAGE -->
+<!-- BLOG TITLE AND CLEVER INTRO -->
     <header>
-        <h1></h1>
+        <h1>This Is A Clever Blog Name</h1>
+        <img src="./assets/images/stand-w-spear.png" alt="a really cool guy holding a spear a shield" width="300">
+        <h3>This is the personal blog of one Nick O'Brien</h3>
+        <p>He's actually much cooler than many would think, I promise</p>
+        <p>Is he, though? Decide for yourself, if you dare continue</p>
     </header>
+
+
+<!-- FORM SUBMISSIONS FOR SUBMITTING ENTRIES AND STUFF -->
+    <section>
+        <div>
+            <h3>Do you have anything you want to add to the conversation?</h3>
+            <p>If you do, make sure you're clever about it</p>
+        </div>
+
+        <form action="./assets/js/form.js">
+            <div id="username">
+                <label for="usernameInput">Username</label><br>
+                <input type="text" id="usernameInput" name="usernameInput"><br>
+            </div>
+            <br>
+            <div id="title">
+                <label for="titleInput">Title*</label><br>
+                <input type="text" id="titleInput" name="titleInput"><br>
+            </div>
+            <br>
+            <div id="content">
+                <label for="contentInput">Content*</label><br>
+                <input type="text" id="contentInput" name="contentInput"><br>
+            </div>
+            <br>
+            <input type="submit" value="Submit Entry" id="submitEntry">
+        </form>
+    </section>
     
 
     <!-- JAVASCRIPT LINKS -->
