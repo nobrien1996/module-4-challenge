@@ -13,15 +13,23 @@
 <!-- HEAD OF PAGE -->
     <header>
         <h3>This Is A Clever Blog Name</h3>
-        <button id="lightDarkToggle">
-            <img src="./assets/images/sun-pic.jpg" alt="a cute lil sun" width="25">
-        </button>
-        <button id="backButton">Back</button>
+        <div class="button-container">
+            <button id="lightDarkToggle">
+                <img src="./assets/images/sun-pic.jpg" alt="a cute lil sun" id="sunIcon">
+            </button>
+            <button id="backButton">Back</button>
+        </div>
     </header>
 
 <!-- HERE ARE WHERE THE BLOG POSTS FROM INDEX.HTML WILL APPEAR WHEN PULLED FROM LOCALSTORAGE -->
     <div id="blogPosts"></div>
-    
+
+    <footer>
+        <h6>Created by Nick O'Brien</h6>
+        <p id="footer">This Is A Clever Blog Name</p>
+        <p id="footer"><a href="https://github.com/nobrien1996?tab=repositories">My portfolio</a></p>
+        <p id="footer"><a href="nickobrienwriter@gmail.com">Email me</a></p>
+    </footer>
 
     <!-- JAVASCRIPT LINKS -->
     <script src="./assets/js/blog.js"></script>

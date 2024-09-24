@@ -1,19 +1,113 @@
 body {
     transition: background-color 0.75s, color 0.8s;
+    gap: 5px;
+    font-family: sans-serif;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
 body.lightMode {
     background-color: whitesmoke;
-    font-family: sans-serif;
     color: darkslategrey;
+    border-color: darkslategrey;
 }
 
 body.darkMode {
     background-color: darkslategrey;
-    font-family: sans-serif;
     color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+header {
+    margin-top: 25px;
+    padding: 25px;
+    border-style: groove;
+    border-radius: 15px;
+    transition: background-color 0.75s, color 0.8s;
+}
+
+header.darkMode {
+    background-color: lightsteelblue;
+    color: darkslategrey;
+}
+
+header.lightMode {
+    background-color: darkslateblue;
+    color: whitesmoke;
+}
+
+.button-container {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+button {
+    padding: 5px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+#lightDarkToggle {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sunIcon {
+    width: 25px;
+    height: auto;
 }
 
 .blog-posts {
     margin-bottom: 15px;
+    margin-left: 25px;
+    border-style: groove;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.75s, color 0.8s;
+}
+
+footer {
+    margin-top: 25px;
+    padding: 25px;
+    border-style: groove;
+    border-radius: 15px;
+    transition: background-color 0.75s, color 0.8s;
+}
+
+footer.darkMode {
+    background-color: lightsteelblue;
+    color: darkslategrey;
+}
+
+footer.lightMode {
+    background-color: darkslateblue;
+    color: whitesmoke;
+}
+
+h6 {
+    text-align: center;
+}
+
+#footer {
+    font-size: xx-small;
+}
+
+a:visited.darkMode {
+    color: purple;
+}
+
+a:visited.lightMode {
+    color: pink;
+}
+
+a.darkMode {
+    color: blue;
+}
+
+a.lightMode {
+    color: lightcyan;
 }
