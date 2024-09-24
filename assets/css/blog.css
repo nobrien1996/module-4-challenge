@@ -1,0 +1,19 @@
+body {
+    transition: background-color 0.75s, color 0.8s;
+}
+
+body.lightMode {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    color: darkslategrey;
+}
+
+body.darkMode {
+    background-color: darkslategrey;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.blog-posts {
+    margin-bottom: 15px;
+}

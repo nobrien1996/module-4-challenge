@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Post</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./form.css">
-    <link re="stylesheet" href="./blog.css">
+    <title>My Posts</title>
+    <link rel="stylesheet" href="./assets/css/blog.css">
 </head>
 
 
@@ -15,12 +13,18 @@
 <!-- HEAD OF PAGE -->
     <header>
         <h3>This Is A Clever Blog Name</h3>
+        <button id="lightDarkToggle">
+            <img src="./assets/images/sun-pic.jpg" alt="a cute lil sun" width="25">
+        </button>
+        <button id="backButton">Back</button>
     </header>
+
+<!-- HERE ARE WHERE THE BLOG POSTS FROM INDEX.HTML WILL APPEAR WHEN PULLED FROM LOCALSTORAGE -->
+    <div id="blogPosts"></div>
     
 
     <!-- JAVASCRIPT LINKS -->
-    <script src="./blog.js"></script>
-    <script src="./form.js"></script>
-    <script src="./logic.js"></script>
+    <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 </html>
