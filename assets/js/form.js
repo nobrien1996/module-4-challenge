@@ -10,6 +10,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const title = document.getElementById("titleInput").value;
         const content = document.getElementById("contentInput").value;
 
+        //SAVE POSTS AS JSON STRINGS AND NOT OVERWRITE EACH OTHER
+        let posts = JSON.parse(localStorage.getItem("posts")) || [];
+
+        posts.push({ title, content, username });
+
+        localStorage.setItem("posts", JSON.stringify(posts));
+
+        alert("Yay, you managed to submit a post! Good boy");
+
         //I DECIDED TO MAKE THE USERNAME NOT REQUIRED AND THAT IT WILL GENERATE A RANDOM ONE IF NONE IS PUT IN
         if (!username) {
             username = "User" + Math.floor(Math.random() * 10000)
